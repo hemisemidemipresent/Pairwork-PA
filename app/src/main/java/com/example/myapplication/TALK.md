@@ -33,3 +33,5 @@ yeah we can just copy-paste it over
 > And yes, the new user sign-up part isn't hard, I guess? It's just Y3 CS stuff I assume.
 
 File IO in here is quite a bit harder I think
+
+Yea I meant the regex stuff lol
