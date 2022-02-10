@@ -35,3 +35,5 @@ yeah we can just copy-paste it over
 File IO in here is quite a bit harder I think
 
 Yea I meant the regex stuff lol
+
+-- ok I just added my ICA code lol, i guess we need to fix it up so it looks nicer :thinking:
