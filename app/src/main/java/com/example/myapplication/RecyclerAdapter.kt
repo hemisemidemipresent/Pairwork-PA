@@ -15,7 +15,7 @@ class RecyclerAdapter(val chpsList: ArrayList<Item>) :
         return ViewHolder(v)
     }
 
-    override fun onBindViewHolder(holder: RecyclerAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindItems(chpsList[position])
     }
 
@@ -29,7 +29,7 @@ class RecyclerAdapter(val chpsList: ArrayList<Item>) :
             itemImage = itemView.findViewById(R.id.item_image)
             itemName = itemView.findViewById(R.id.item_name)
             itemDescription = itemView.findViewById(R.id.item_description)
-            itemView.setOnClickListener { view -> val pos = adapterPosition + 1 }
+            //itemView.setOnClickListener { view -> val pos = adapterPosition + 1 }
         }
 
         fun bindItems(item: Item) {
