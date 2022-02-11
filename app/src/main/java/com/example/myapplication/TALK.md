@@ -37,3 +37,5 @@ File IO in here is quite a bit harder I think
 Yea I meant the regex stuff lol
 
 -- ok I just added my ICA code lol, i guess we need to fix it up so it looks nicer :thinking:
+-- so like, after we fix up the cards, then we can go on to work on the rest of the thing, esp the ui
+-- do you want anything else in terms of design? other than the functionality
