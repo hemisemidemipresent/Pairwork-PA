@@ -8,7 +8,7 @@
         android:title="@string/app_name"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_toggle_layout"
+        android:id="@+id/action_contact"
         android:icon="@drawable/phone"
         android:iconTint="@color/white"
         android:title="@string/action_contact"

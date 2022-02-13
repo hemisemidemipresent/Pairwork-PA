@@ -2,7 +2,11 @@ package com.example.myapplication
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.util.*
@@ -62,5 +66,26 @@ class MainActivity : AppCompatActivity() {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle action bar item clicks here. The action bar will automatically handle clicks on
+        // the Home/Up button, so long as you specify a parent activity in AndroidManifest.xml.
+        return when (item.itemId) {
+            R.id.info -> {
+                true;
+            }
+            R.id.action_contact -> {
+                true
+            }
+            R.id.action_reviews -> {
+                true
+            }
+            R.id.action_sign_up -> {
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+
     }
 }
