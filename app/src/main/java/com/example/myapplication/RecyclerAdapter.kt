@@ -34,7 +34,7 @@ class RecyclerAdapter(val chpsList: ArrayList<Item>) :
             itemView.setOnClickListener { view ->
                 val pos = adapterPosition + 1
                 Snackbar.make(view, "Click detected on item $pos", Snackbar.LENGTH_LONG)
-                    .setAction("Action",null).show()
+                    .setAction("Action", null).show()
                 val intent = Intent(itemView.context, DescriptionActivity::class.java)
                 intent.putExtra("string", pos.toString())
                 itemView.context.startActivity(intent)
@@ -42,9 +42,9 @@ class RecyclerAdapter(val chpsList: ArrayList<Item>) :
         }
 
         fun bindItems(item: Item) {
-            //itemTitle.text = chp.title
-            //itemDetails.text = chp.detail
-            //itemImage.setImageResource(chp.images)
+            itemName.text = item.name
+            itemDescription.text = item.desc;
+            itemImage.setImageResource(item.img)
         }
     }
 }

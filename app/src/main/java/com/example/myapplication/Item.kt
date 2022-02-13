@@ -10,4 +10,5 @@ data class Item(
     val price: Double,
     val size: ItemSize,
     val expiry: Date,
+    val img: Int
 )

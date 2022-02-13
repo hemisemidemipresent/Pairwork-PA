@@ -8,4 +8,6 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="wheat">#F5DEB3</color>
+    <color name="wheat_100">#EBBB62</color>
+    <color name="wheat_300">#D6951C</color>
 </resources>

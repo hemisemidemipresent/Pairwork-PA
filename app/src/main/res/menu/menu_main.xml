@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_info"
+        android:icon="@drawable/info"
+        android:iconTint="@color/white"
+        android:title="@string/app_name"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_toggle_layout"
+        android:icon="@drawable/phone"
+        android:iconTint="@color/white"
+        android:title="@string/action_contact"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_reviews"
+        android:title="@string/action_reviews"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sign_up"
+        android:title="@string/action_sign_up"
+        app:showAsAction="never" />
+</menu>
