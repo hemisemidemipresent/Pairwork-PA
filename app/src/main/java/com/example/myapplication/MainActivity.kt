@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -72,16 +73,22 @@ class MainActivity : AppCompatActivity() {
         // Handle action bar item clicks here. The action bar will automatically handle clicks on
         // the Home/Up button, so long as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.info -> {
-                true;
+            R.id.action_info -> {
+                Toast.makeText(this, "info", Toast.LENGTH_LONG).show()
+                true
             }
             R.id.action_contact -> {
+                Toast.makeText(this, "contact", Toast.LENGTH_LONG).show()
                 true
             }
             R.id.action_reviews -> {
+                Toast.makeText(this, "rev", Toast.LENGTH_LONG).show()
                 true
             }
             R.id.action_sign_up -> {
+                Toast.makeText(this, "signup", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, SignUpActivity::class.java)
+                this.startActivity(intent)
                 true
             }
             else -> super.onOptionsItemSelected(item)

@@ -63,5 +63,6 @@ a review to the list of reviews.
 
 7. [ ] An option should be present for the user to sign up as a new user to SuperVend. Relevant
 checks need to be done to ensure the user enters a valid username and password.
+   Currently what I have done for this is create the sign up page, but we need to add on 
 
 I have put 4. 5. 6. in the menu, functionality to be implemented
