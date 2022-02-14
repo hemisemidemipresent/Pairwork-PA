@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 69420.0,
                 ItemSize.MEDIUM,
                 Date(1676385477),
-                R.drawable.food03
+                R.drawable.food03, -1
             )
         )
         chpsList.add(
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                 42069.0,
                 ItemSize.SMALL,
                 Date(1676385477),
-                R.drawable.food04
+                R.drawable.food04, 69
             )
         )
         chpsList.add(
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                 49062.0,
                 ItemSize.MEDIUM,
                 Date(1676385477),
-                R.drawable.food05
+                R.drawable.food05, 25
             )
         )
         val adapter = RecyclerAdapter(chpsList)

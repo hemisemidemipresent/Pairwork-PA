@@ -61,6 +61,7 @@ class RecyclerAdapter(val chpsList: ArrayList<Item>) :
                 }
                 intent.putExtra("expiry", item.expiry.time)
                 intent.putExtra("img", item.img)
+                intent.putExtra("temp",item.temp)
                 itemView.context.startActivity(intent)
             }
         }

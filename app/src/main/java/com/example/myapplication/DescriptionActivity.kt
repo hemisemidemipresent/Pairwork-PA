@@ -23,6 +23,7 @@ class DescriptionActivity : AppCompatActivity() {
         val size: TextView = findViewById(R.id.size)
         val expiry: TextView = findViewById(R.id.expiry)
         val brand: TextView = findViewById(R.id.brand)
+        val temp: TextView = findViewById(R.id.temp)
 
         name.text = intent.getStringExtra("name")
         item_image.setImageResource(
@@ -38,6 +39,8 @@ class DescriptionActivity : AppCompatActivity() {
         val date = Date(intent.getLongExtra("expiry", 0))
         expiry.text = "expiry: " + date.toString()
         brand.text = "brand" + intent.getStringExtra("brand")
+        temp.text = "Storage temperature: " + intent.getIntExtra("temp",404) + "°C"
+
     }
 
 }
