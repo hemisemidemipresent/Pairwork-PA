@@ -8,13 +8,15 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
+import java.util.*
+import kotlin.collections.ArrayList
 
 class RecyclerAdapter(val chpsList: ArrayList<Item>) :
     RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v: View =
             LayoutInflater.from(parent.context).inflate(R.layout.card_layout, parent, false)
-        return ViewHolder(v)
+        return ViewHolder(v, chpsList)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -22,7 +24,8 @@ class RecyclerAdapter(val chpsList: ArrayList<Item>) :
     }
 
     override fun getItemCount() = chpsList.size
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View, val chpsList: ArrayList<Item>) :
+        RecyclerView.ViewHolder(itemView) {
         var itemImage: ImageView
         var itemName: TextView
         var itemDescription: TextView
@@ -33,10 +36,31 @@ class RecyclerAdapter(val chpsList: ArrayList<Item>) :
             itemDescription = itemView.findViewById(R.id.item_description)
             itemView.setOnClickListener { view ->
                 val pos = adapterPosition + 1
-                Snackbar.make(view, "Click detected on item $pos", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+                val item = chpsList[adapterPosition]
+                // fuck you
+                // unsnacks your snackbar
+                // Snackbar.make(view, "Click detected on item $pos", Snackbar.LENGTH_LONG)
+                //      .setAction("Action", null).show()
                 val intent = Intent(itemView.context, DescriptionActivity::class.java)
-                intent.putExtra("string", pos)
+                intent.putExtra("ID", item.ID)
+                intent.putExtra("name", item.name)
+                intent.putExtra("desc", item.desc)
+                intent.putExtra("brand", item.brand)
+                intent.putExtra("price", item.price)
+
+                when (item.size) {
+                    ItemSize.LARGE -> {
+                        intent.putExtra("size", "large")
+                    }
+                    ItemSize.MEDIUM -> {
+                        intent.putExtra("size", "medium")
+                    }
+                    ItemSize.SMALL -> {
+                        intent.putExtra("size", "small")
+                    }
+                }
+                intent.putExtra("expiry", item.expiry.time)
+                intent.putExtra("img", item.img)
                 itemView.context.startActivity(intent)
             }
         }

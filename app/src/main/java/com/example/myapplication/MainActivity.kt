@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
                 "brand0",
                 69420.0,
                 ItemSize.MEDIUM,
-                Date(0),
+                Date(1676385477),
                 R.drawable.food03
             )
         )
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
                 "brand1",
                 42069.0,
                 ItemSize.SMALL,
-                Date(1),
+                Date(1676385477),
                 R.drawable.food04
             )
         )
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                 "brand2",
                 49062.0,
                 ItemSize.MEDIUM,
-                Date(2),
+                Date(1676385477),
                 R.drawable.food05
             )
         )
