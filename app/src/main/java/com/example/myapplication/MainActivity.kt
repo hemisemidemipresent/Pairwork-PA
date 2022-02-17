@@ -74,7 +74,8 @@ class MainActivity : AppCompatActivity() {
         // the Home/Up button, so long as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_info -> {
-                Toast.makeText(this, "info", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, AboutActivity::class.java)
+                this.startActivity(intent)
                 true
             }
             R.id.action_contact -> {
