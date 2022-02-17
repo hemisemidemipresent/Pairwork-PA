@@ -40,4 +40,6 @@ GUI system to allow customers to select and purchase products listed in their ve
 In addition, a secure interface to allow staff to replenish their inventories, view transaction
 records, analyze sales figures and post advertisement posters/videos. Winner of the competition
 will be given a significantly large amount of prize money as reward and a job offer.</string>
+    <string name="contact">you can contact us via the following::\nTel: +69 4200 0514\nemail: dQw4w9WgXcQ@gmail.com\nOffice: 17.112904, -171.866954</string>
+    <string name="koishi">koishi</string>
 </resources>

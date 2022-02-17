@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -61,6 +62,12 @@ class MainActivity : AppCompatActivity() {
         )
         val adapter = RecyclerAdapter(chpsList)
         recyclerView.adapter = adapter
+
+        val fab : FloatingActionButton = findViewById(R.id.fab)
+        fab.setOnClickListener { view ->
+            val intent = Intent(this, ContactActivity::class.java)
+            this.startActivity(intent)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -79,7 +86,8 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             R.id.action_contact -> {
-                Toast.makeText(this, "contact", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, ContactActivity::class.java)
+                this.startActivity(intent)
                 true
             }
             R.id.action_reviews -> {

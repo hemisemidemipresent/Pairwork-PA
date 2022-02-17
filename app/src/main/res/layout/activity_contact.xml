@@ -7,13 +7,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <TextView
-            android:id="@+id/about"
+            android:id="@+id/contact"
             android:textColor="?colorOnSecondary"
             android:layout_marginStart="10sp"
             android:layout_marginEnd="10sp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/supervend_lore"
+            android:text="@string/contact"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
