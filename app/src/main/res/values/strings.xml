@@ -3,4 +3,7 @@
     <string name="action_contact">Contact Information</string>
     <string name="action_reviews">Customer Reviews</string>
     <string name="action_sign_up">Sign Up</string>
+    <string name="enter_signup_details">Enter Signup Details:</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
 </resources>
