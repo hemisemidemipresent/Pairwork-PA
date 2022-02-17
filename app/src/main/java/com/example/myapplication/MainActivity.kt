@@ -86,7 +86,8 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             R.id.action_sign_up -> {
-                Toast.makeText(this, "signup", Toast.LENGTH_LONG).show()
+                // un-toasts your bread
+                //Toast.makeText(this, "signup", Toast.LENGTH_LONG).show()
                 val intent = Intent(this, SignUpActivity::class.java)
                 this.startActivity(intent)
                 true
