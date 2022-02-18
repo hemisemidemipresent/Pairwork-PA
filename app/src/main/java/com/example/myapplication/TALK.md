@@ -66,3 +66,13 @@ checks need to be done to ensure the user enters a valid username and password.
    Currently what I have done for this is create the sign up page, but we need to add on 
 
 I have put 4. 5. 6. in the menu, functionality to be implemented
+
+okay, there's a bit of stuff to fix for the reviews:
+- the star size and colour is kinda scuffed, we need to fix that
+- actually add a signup / submit review button, and make it actually update the list of reviews
+- fix up the intent on click of the review (to show the review): currently I have set up the intent but not yet created the new activity
+- possibly add an avatar? currently I only am planning to put a default avatar (or let the user choose from a list)
+
+other than that:
+- we need to fix up the things to be actual and not fillers
+- and possibly make the UI better (look nicer, esp the screens after)
