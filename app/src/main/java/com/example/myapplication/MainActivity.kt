@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -59,6 +60,12 @@ class MainActivity : AppCompatActivity() {
         )
         val adapter = RecyclerAdapter(chpsList)
         recyclerView.adapter = adapter
+
+        val fab : FloatingActionButton = findViewById(R.id.fab)
+        fab.setOnClickListener { view ->
+            val intent = Intent(this, ContactActivity::class.java)
+            this.startActivity(intent)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -72,11 +79,13 @@ class MainActivity : AppCompatActivity() {
         // the Home/Up button, so long as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_info -> {
-                Toast.makeText(this, "info", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, AboutActivity::class.java)
+                this.startActivity(intent)
                 true
             }
             R.id.action_contact -> {
-                Toast.makeText(this, "contact", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, ContactActivity::class.java)
+                this.startActivity(intent)
                 true
             }
             R.id.action_reviews -> {
@@ -86,7 +95,8 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             R.id.action_sign_up -> {
-                Toast.makeText(this, "signup", Toast.LENGTH_LONG).show()
+                // un-toasts your bread
+                //Toast.makeText(this, "signup", Toast.LENGTH_LONG).show()
                 val intent = Intent(this, SignUpActivity::class.java)
                 this.startActivity(intent)
                 true

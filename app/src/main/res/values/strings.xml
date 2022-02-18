@@ -3,4 +3,43 @@
     <string name="action_contact">Contact Information</string>
     <string name="action_reviews">Customer Reviews</string>
     <string name="action_sign_up">Sign Up</string>
+    <string name="enter_signup_details">Enter Signup Details:</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="supervend_lore">We live in an era of disruption in which powerful global forces are changing how we live and work.
+The rise of China, India, and other emerging economies; the rapid spread of digital technologies;
+the growing challenges to globalization; and, in some countries, the splintering of long-held social
+contracts are all roiling business, the economy, and society. Food deliveries such as Grab Food,
+Deliveroo and FoodPanda have caused major impact to the food and beverage industry in recent
+years. Likewise, Uber, Grab, Gojek, Ryde have cause major shakeups to the transport industry
+which was previously dominated by taxi companies.
+SuperVend, a promising local startup which specializes in mega vending machines is also aiming
+to disrupt the retailing industry. The company’s business model is to strategically position their
+mega vending machines (which are about the size of a 40 feet shipping containers) all over
+Singapore. Their idea is to bring supermarket nearer to customers 24/7 and to encourage social
+distancing due to the current raging COVID-19 pandemic. The goal of the company is to have a
+SuperVend vending machine installed within every 100 meters apart in each populated district
+by 2022.\n\nWith their setup, SuperVend will change the way economic activities are carried out within each
+satellite town. This new innovative concept of putting “supermarket in a box”, will cause even
+greater disruptions to society and lifestyle. Coffee shops, provision shops, hardware shops,
+electronics shops, fruit sellers, confectioneries, florists, fishmongers, butchers, hawkers, etc. will
+soon be affected by this new disruption\n\nInternally, the fully automated vending machines are fitted with complex conveyors belt systems
+that will convey, pack, and dispense products to customers. The architectural setup of the
+vending machines can be expanded laterally or stack up vertically to cater to more varieties and
+accommodate additional storage demands. Another feature of the Supervend machines is that it
+can integrate several types of products such as food (fruits, vegetables, canned, cakes, chicken,
+bread, etc), beverages, detergents, electronic gadgets, toys, clothes, books, medicine, flowers,
+and many more products all within the vending machine.\n\nDue to its large surface area of the vending machines, multiple large screen panels can be
+installed around it. From a business perspective, this offers opportunities to sell advertisement
+space which could generate huge revenues for the company. Besides putting up promotions for
+their own products, these panels can also be used by other companies to subscribe to its
+advertisement spaces for marketing.\n\nAs a startup, the company is looking for talented programmers to join them as developers. Instead
+of the traditional job application process to employ staff, they will be launching a programming
+competition to source for talents. The competition requires the participant to building a front-end
+GUI system to allow customers to select and purchase products listed in their vending machines.
+In addition, a secure interface to allow staff to replenish their inventories, view transaction
+records, analyze sales figures and post advertisement posters/videos. Winner of the competition
+will be given a significantly large amount of prize money as reward and a job offer.</string>
+    <string name="contact">you can contact us via the following::\nTel: +69 4200 0514\nemail: dQw4w9WgXcQ@gmail.com\nOffice: 17.112904, -171.866954</string>
+    <string name="koishi">koishi</string>
 </resources>
