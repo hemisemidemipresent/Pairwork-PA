@@ -26,6 +26,8 @@
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".AddReviewActivity"
             android:parentActivityName=".ReviewActivity"/>
+        <activity android:name=".DisplayReviewActivity"
+            android:parentActivityName=".ReviewActivity"/>
         <activity android:name=".AboutActivity"
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".ContactActivity"

@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.myapplication.R
 import java.util.*
 
 class DescriptionActivity : AppCompatActivity() {
@@ -22,7 +21,7 @@ class DescriptionActivity : AppCompatActivity() {
         val size: TextView = findViewById(R.id.size)
         val expiry: TextView = findViewById(R.id.expiry)
         val brand: TextView = findViewById(R.id.brand)
-        val temp: TextView = findViewById(R.id.temp)
+        val temp: TextView = findViewById(R.id.reviewTextView)
 
         name.text = intent.getStringExtra("name")
         item_image.setImageResource(
