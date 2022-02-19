@@ -50,7 +50,6 @@
             android:numStars="5"
             android:progressBackgroundTint="?colorSecondary"
             android:progressTint="?colorSecondaryVariant"
-            android:rating="5"
             android:scaleX="0.75"
             android:scaleY="0.75"
             android:secondaryProgressTint="?colorSecondary"

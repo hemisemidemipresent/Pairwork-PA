@@ -29,17 +29,9 @@ vending machines can be expanded laterally or stack up vertically to cater to mo
 accommodate additional storage demands. Another feature of the Supervend machines is that it
 can integrate several types of products such as food (fruits, vegetables, canned, cakes, chicken,
 bread, etc), beverages, detergents, electronic gadgets, toys, clothes, books, medicine, flowers,
-and many more products all within the vending machine.\n\nDue to its large surface area of the vending machines, multiple large screen panels can be
-installed around it. From a business perspective, this offers opportunities to sell advertisement
-space which could generate huge revenues for the company. Besides putting up promotions for
-their own products, these panels can also be used by other companies to subscribe to its
-advertisement spaces for marketing.\n\nAs a startup, the company is looking for talented programmers to join them as developers. Instead
-of the traditional job application process to employ staff, they will be launching a programming
-competition to source for talents. The competition requires the participant to building a front-end
-GUI system to allow customers to select and purchase products listed in their vending machines.
-In addition, a secure interface to allow staff to replenish their inventories, view transaction
-records, analyze sales figures and post advertisement posters/videos. Winner of the competition
-will be given a significantly large amount of prize money as reward and a job offer.</string>
+and many more products all within the vending machine.</string>
     <string name="contact">you can contact us via the following::\nTel: +69 4200 0514\nemail: dQw4w9WgXcQ@gmail.com\nOffice: 17.112904, -171.866954</string>
     <string name="koishi">koishi</string>
+    <string name="enter_review">Enter Review:</string>
+    <string name="enter">Enter</string>
 </resources>

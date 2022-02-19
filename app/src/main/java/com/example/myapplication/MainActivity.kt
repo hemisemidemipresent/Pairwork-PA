@@ -42,37 +42,37 @@ class MainActivity : AppCompatActivity() {
         chpsList.add(
             Item(
                 "FD00000",
-                "name0",
-                "insert description",
-                "brand0",
-                69420.0,
-                ItemSize.MEDIUM,
+                "apple",
+                "an apple a day keeps the doctor away",
+                "Pasar",
+                2.0,
+                ItemSize.SMALL,
                 Date(1676385477),
-                R.drawable.food03, -1
+                R.drawable.apple, 3
             )
         )
         chpsList.add(
             Item(
                 "FD00001",
-                "name1",
-                "insert description",
-                "brand1",
-                42069.0,
-                ItemSize.SMALL,
+                "carrot",
+                "everyone's favourite orange root",
+                "Pasar",
+                1.0,
+                ItemSize.MEDIUM,
                 Date(1676385477),
-                R.drawable.food04, 69
+                R.drawable.carrot, 15
             )
         )
         chpsList.add(
             Item(
                 "FD00002",
-                "name2",
-                "insert description",
-                "brand2",
-                49062.0,
+                "green tea",
+                "green tea to drink",
+                "Polka",
+                1.5,
                 ItemSize.MEDIUM,
                 Date(1676385477),
-                R.drawable.food05, 25
+                R.drawable.tea, 25
             )
         )
         val adapter = RecyclerAdapter(chpsList)
