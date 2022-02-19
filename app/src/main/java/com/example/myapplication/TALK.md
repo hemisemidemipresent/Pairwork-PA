@@ -50,18 +50,18 @@ the catalog immediately.
 2. [x] The SuperVend catalog needs to be scrollable and the items need to be placed in the
 form of cards.
 
-3. [ ] When the user selects any item from the catalog, details of the item will be displayed to
+3. [x] When the user selects any item from the catalog, details of the item will be displayed to
 the user (item category, price, product, storage temperature if relevant)
 
-4. [ ] A short description about the SuperVend to attract customers need to be accessible in
+4. [x] A short description about the SuperVend to attract customers need to be accessible in
 the app
 
-5. [ ] Contact information regarding SuperVend needs to be present for the user to contact.
+5. [x] Contact information regarding SuperVend needs to be present for the user to contact.
 
 6. [ ] A list of customer reviews should be present in the app. The user should be able to add
 a review to the list of reviews. 
 
-7. [ ] An option should be present for the user to sign up as a new user to SuperVend. Relevant
+7. [x] An option should be present for the user to sign up as a new user to SuperVend. Relevant
 checks need to be done to ensure the user enters a valid username and password.
    Currently what I have done for this is create the sign up page, but we need to add on 
 
