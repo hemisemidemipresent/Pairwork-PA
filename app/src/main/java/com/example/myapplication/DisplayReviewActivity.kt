@@ -22,17 +22,9 @@ class DisplayReviewActivity : AppCompatActivity() {
         val avatar: ImageView = findViewById(R.id.avatar)
 
         name.text = intent.getStringExtra("name")
-        ratingBar.rating = intent.getFloatExtra("rating", 3.6F)
+        ratingBar.rating = (intent.getStringExtra("rating"))!!.toFloat()
         review.text = intent.getStringExtra("review")
         avatar.setImageDrawable(getDrawable(intent.getIntExtra("avatar",0)))
-
-        /*
-
-                intent.putExtra("avatar", review.avatar)
-                intent.putExtra("name", review.name)
-                intent.putExtra("rating", review.rating)
-                intent.putExtra("review", review.review)
-         */
     }
 
 }

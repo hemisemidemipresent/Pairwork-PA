@@ -1,6 +1,8 @@
 package com.example.myapplication
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -15,16 +17,21 @@ import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
     val chpsList = ArrayList<Item>()
-
+    lateinit var sharedPreferences: SharedPreferences
     override fun onCreate(savedInstanceState: Bundle?) {
+        sharedPreferences = getSharedPreferences("Prefs", Context.MODE_PRIVATE)
+        //val editor = sharedPreferences.edit()
+        //editor.clear()
+        //editor.apply()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val intent = intent
         val isfromsignup = intent.getBooleanExtra("fromsignup", false)
         if (isfromsignup) {
+            val username = sharedPreferences.getString("username", "oops")
             Snackbar.make(
                 findViewById(R.id.fab),
-                "You have (not) been signed up!",
+                "$username, you have been signed up!",
                 Snackbar.LENGTH_SHORT
             ).show()
         }
@@ -73,7 +80,7 @@ class MainActivity : AppCompatActivity() {
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
-            val intent = Intent(this, ContactActivity::class.java)
+            @Suppress("NAME_SHADOWING") val intent = Intent(this, ContactActivity::class.java)
             this.startActivity(intent)
         }
     }

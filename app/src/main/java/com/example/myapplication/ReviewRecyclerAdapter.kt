@@ -38,7 +38,7 @@ class ReviewRecyclerAdapter(val reviewList: ArrayList<Review>) :
                 val intent = Intent(itemView.context, DisplayReviewActivity::class.java)
                 intent.putExtra("avatar", review.avatar)
                 intent.putExtra("name", review.name)
-                intent.putExtra("rating", review.rating)
+                intent.putExtra("rating", review.rating.toString())
                 intent.putExtra("review", review.review)
                 itemView.context.startActivity(intent)
             }

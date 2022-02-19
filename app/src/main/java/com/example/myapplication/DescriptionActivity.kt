@@ -35,7 +35,7 @@ class DescriptionActivity : AppCompatActivity() {
         size.text = "size: " + intent.getStringExtra("size")
 
         val date = Date(intent.getLongExtra("expiry", 0))
-        expiry.text = "expiry: " + date.toString()
+        expiry.text = "expiry: $date"
         brand.text = "brand: " + intent.getStringExtra("brand")
         temp.text = "Storage temperature: " + intent.getIntExtra("temp",404) + "°C"
 
