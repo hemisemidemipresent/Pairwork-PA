@@ -1,11 +1,13 @@
 package com.example.myapplication
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import com.example.myapplication.R
 import com.google.android.material.snackbar.Snackbar
 
@@ -22,11 +24,9 @@ class SignUpActivity : AppCompatActivity() {
         btn.setOnClickListener { view ->
 
             if (username.isNotEmpty() && password.isNotEmpty()) {
-                Snackbar.make(view, "You have signed up to SuperVend (not)", Snackbar.LENGTH_LONG)
-                    .show()
-
-                usernameEditText.text = "";
-                passwordEditText.text = "";
+                val intent = Intent(this, MainActivity::class.java)
+                intent.putExtra("fromsignup",true)
+                this.startActivity(intent)
             } else if (!username.isNotEmpty()) {
                 Snackbar.make(view, "You have not put in a username", Snackbar.LENGTH_LONG)
                     .show()

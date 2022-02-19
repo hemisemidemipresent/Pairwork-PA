@@ -16,7 +16,7 @@
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
         app:backgroundTint="?colorPrimaryVariant"
-        app:srcCompat="drawable/plus"
+        app:srcCompat="@drawable/add"
         tools:ignore="ContentDescription" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

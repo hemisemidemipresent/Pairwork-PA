@@ -14,7 +14,6 @@ class DescriptionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_description)
         val intent = intent
-        val string = intent.getStringExtra("string")
 
         val name: TextView = findViewById(R.id.name)
         val item_image: ImageView = findViewById(R.id.item_image)

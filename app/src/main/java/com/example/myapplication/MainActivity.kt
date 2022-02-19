@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.snackbar.Snackbar
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -18,6 +19,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val intent = intent
+        val isfromsignup = intent.getBooleanExtra("fromsignup", false)
+        if (isfromsignup) {
+            Snackbar.make(
+                findViewById(R.id.fab),
+                "You have (not) been signed up!",
+                Snackbar.LENGTH_SHORT
+            ).show()
+        }
 
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         val layoutManager = LinearLayoutManager(this)
@@ -61,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = RecyclerAdapter(chpsList)
         recyclerView.adapter = adapter
 
-        val fab : FloatingActionButton = findViewById(R.id.fab)
+        val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
             val intent = Intent(this, ContactActivity::class.java)
             this.startActivity(intent)
