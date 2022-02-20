@@ -35,24 +35,24 @@ class ReviewActivity : AppCompatActivity() {
             Review(
                 5.0,
                 "The app is...",
-                R.drawable.food02,
-                "Person 1"
+                R.drawable.person_1,
+                "Bob"
             )
         )
         reviewList.add(
             Review(
                 4.5,
                 "The app is...",
-                R.drawable.food05,
-                "Person 2"
+                R.drawable.person_2,
+                "Joe"
             )
         )
         reviewList.add(
             Review(
                 5.0,
-                "The app is...",
-                R.drawable.ic_launcher_foreground,
-                "Person 3"
+                "The app is quite easy to use",
+                R.drawable.person_3,
+                "Ann"
             )
         )
         val intent = intent
@@ -61,7 +61,7 @@ class ReviewActivity : AppCompatActivity() {
                 Review(
                     intent.getStringExtra("rating")!!.toDouble(),
                     intent.getStringExtra("review").toString(),
-                    R.drawable.ic_launcher_foreground,
+                    R.drawable.person_default,
                     sharedPreferences.getString("username", "oops").toString()
                 )
             )
